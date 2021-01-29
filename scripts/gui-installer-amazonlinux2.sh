@@ -35,7 +35,7 @@ sudo amazon-linux-extras install -y mate-desktop1.x
 sudo bash -c 'echo PREFERRED=/usr/bin/mate-session > /etc/sysconfig/desktop'
 # Install vnc
 sudo yum -y install tigervnc-server
-# You can write password here!
+# Set password automatically
 sudo yum install -y expect
 expect -c "
     set timeout 3
