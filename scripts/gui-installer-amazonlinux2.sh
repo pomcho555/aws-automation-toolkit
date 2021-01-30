@@ -57,7 +57,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable vncserver@:1
 sudo systemctl start vncserver@:1
 # (Option) Install Chrome
-if [ BROWSER = 1 ]; then
+if [ $BROWSER -eq 1 ]; then
     sudo amazon-linux-extras install -y epel
     sudo yum install -y chromium
 fi
